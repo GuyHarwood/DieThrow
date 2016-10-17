@@ -22,6 +22,11 @@ namespace UI.Controllers
         [HttpPost]
         public ViewResult Index(HomeIndexModel model)
         {
+            if (!ModelState.IsValid)
+            {
+                return View(model);
+            }
+
             var result = _handler.Handle(new ThrowDice()
             {
                 NumberOfTimes = model.ThrowCount
