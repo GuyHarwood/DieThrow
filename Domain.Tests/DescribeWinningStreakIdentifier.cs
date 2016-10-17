@@ -36,18 +36,6 @@ namespace GuyHarwood.DieThrow.Domain.Tests
         }
 
         [Fact]
-        public void CallingMillionThrows()
-        {
-            var dice = new Dice();
-            var oneMillion = 1000000;
-            for (var i = 0; i < oneMillion; i++)
-            {
-                var result = dice.Throw();
-                Assert.InRange(result, 1, 6);
-            }
-        }
-
-        [Fact]
         public void ItHandlesDuplicateStreaks()
         {
             var input = new byte[] {1, 6, 6, 6, 1, 6, 6, 6, 1};
@@ -67,6 +55,16 @@ namespace GuyHarwood.DieThrow.Domain.Tests
             var actual = _sut.Calculate(input);
 
             Assert.Equal(expected, actual);
+        }
+
+        [Theory]
+        [InlineData(new byte[] { 4, 3, 6, 6, 1, 3, 5, 6, 4, 1 }, 2)]
+        [InlineData(new byte[] {4, 5, 3, 6, 6, 4, 3, 5, 1, 2, 4, 6, 6, 5, 4, 3, 1, 6, 6, 6 }, 3)]
+        public void ItSupportsExamplesInSpecification(byte[] throws, byte expectedOutput)
+        {
+            var actual = _sut.Calculate(throws);
+
+            Assert.Equal(expectedOutput, actual);
         }
     }
 }

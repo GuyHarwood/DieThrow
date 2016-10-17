@@ -1,0 +1,7 @@
+C:\Users\guy\dev\GuyHarwood.DieThrow\Domain\bin\Debug\GuyHarwood.DieThrow.Domain.dll
+C:\Users\guy\dev\GuyHarwood.DieThrow\Domain\bin\Debug\GuyHarwood.DieThrow.Domain.pdb
+C:\Users\guy\dev\GuyHarwood.DieThrow\Domain\bin\Debug\Newtonsoft.Json.dll
+C:\Users\guy\dev\GuyHarwood.DieThrow\Domain\bin\Debug\Newtonsoft.Json.xml
+C:\Users\guy\dev\GuyHarwood.DieThrow\Domain\obj\Debug\Domain.csprojResolveAssemblyReference.cache
+C:\Users\guy\dev\GuyHarwood.DieThrow\Domain\obj\Debug\GuyHarwood.DieThrow.Domain.dll
+C:\Users\guy\dev\GuyHarwood.DieThrow\Domain\obj\Debug\GuyHarwood.DieThrow.Domain.pdb

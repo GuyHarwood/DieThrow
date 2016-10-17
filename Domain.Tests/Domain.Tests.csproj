@@ -68,6 +68,7 @@
     <Compile Include="DescribeCommandValidator.cs" />
     <Compile Include="DescribeThrowDiceHandler.cs" />
     <Compile Include="DescribeWinningStreakIdentifier.cs" />
+    <Compile Include="Integration\DescribeDiceThrowHandlerIntegration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
